@@ -1,0 +1,26 @@
+body {
+  background: url(http://blog.ioncube.com/wp-content/uploads/2013/12/blue-cloud-background-blue2-19029417-1920-9861.jpg) no-repeat center center fixed;
+
+}
+.panel{
+
+}
+.tweet{
+width: 600px;
+float: right;
+}
+#timestamp{
+float: right;
+font-style:italic;
+font-style:mute;
+}
+#navWindow{
+float: left;
+width: 300px;
+}
+.navInfo{
+color: #9AE4E8;
+}
+.home{
+color: #9AE4E8;
+}

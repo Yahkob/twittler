@@ -1,27 +1,34 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/stylesheet.css" rel="stylesheet" media="screen">
     <script src="jquery.js"></script>
     <script src="data_generator.js"></script>
+    <script src="main.js"></script>
+    <script src="moment.min.js"></script>
+    <script src="livestamp.min.js"></script>
   </head>
   <body>
-    <script>
-
-      $(document).ready(function(){
-        var $body = $('body');
-        $body.html('');
-
-        var index = streams.home.length - 1;
-        while(index >= 0){
-          var tweet = streams.home[index];
-          var $tweet = $('<div></div>');
-          $tweet.text('@' + tweet.user + ': ' + tweet.message);
-          $tweet.appendTo($body);
-          index -= 1;
-        }
-
-      });
-
-    </script>
-  </body>
-</html>
+  <div class="container">
+    <nav class="navbar navbar-inverse"><h2 class="home">Twittler</h2>
+    </nav>
+    <div id="navWindow" class="panel panel-success">
+    <div class="panel-heading">
+    <h2 class="panel-title">
+      Currently Viewing
+    </h2>
+    </div>
+    <div id="infoBox" class="panel-body">
+    <h4 class="navInfo">
+      All tweets
+    </h4>
+    </div>
+    </div>
+    <div id="tweetbox-all" class="panel panel-info tweet">
+    </div>
+    <div id="tweetbox-single" class="panel panel-info tweet">
+    </div>
+  </div>
+    </body>
+  </html>
