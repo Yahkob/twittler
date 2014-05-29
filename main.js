@@ -9,10 +9,10 @@ $(document).ready(function(){
   var fetchTweets = function(start,end,data,location){
     for(var i = start; i < end; i++){
       var tweet = data[i]
-      var user = $('<div class="panel-heading"><a class="users" href="#"></a></div>');
-      var post = $('<div class="panel-body"></div>');
+      var user = $('<article class="panel-heading"><a class="users" href="#"></a></div>');
+      var post = $('<article class="panel-body"></div>');
       //'Posted about x time ago'
-      var time = $('<span class="text-muted" id="timestamp" data-livestamp="'+ tweet.created_at +'"></span>');
+      var time = $('<article class="text-muted" id="timestamp" data-livestamp="'+ tweet.created_at +'"></span>');
       user.children().text("@" + tweet.user);
       post.text(tweet.message)
       location.prepend(post);
