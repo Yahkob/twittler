@@ -2,8 +2,8 @@ body {
   background: url(twittler-bg.png) no-repeat center center fixed;
 
 }
-.panel{
-
+#feed{
+  opacity: 0.95;
 }
 .tweet{
 width: 600px;
