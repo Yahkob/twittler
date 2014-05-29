@@ -10,25 +10,28 @@
     <script src="livestamp.min.js"></script>
   </head>
   <body>
-  <div class="container">
+  <main class="container">
     <nav class="navbar navbar-inverse"><h2 class="home">Twittler</h2>
     </nav>
-    <div id="navWindow" class="panel panel-success">
-    <div class="panel-heading">
+
+    <aside id="navWindow" class="panel panel-success">
+    <header class="panel-heading">
     <h2 class="panel-title">
       Currently Viewing
     </h2>
-    </div>
-    <div id="infoBox" class="panel-body">
+    </header>
+    <section id="infoBox" class="panel-body">
     <h4 class="navInfo">
       All tweets
     </h4>
-    </div>
-    </div>
-    <div id="tweetbox-all" class="panel panel-info tweet">
-    </div>
-    <div id="tweetbox-user" class="panel panel-info tweet">
-    </div>
-  </div>
+    </section>
+    </aside>
+    <section id="feed">
+    <section id="tweetbox-all" class="panel panel-info tweet">
+    </section>
+    <section id="tweetbox-user" class="panel panel-info tweet">
+    </section>
+  </section>
+  </main>
     </body>
   </html>
